@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./img/icon.ico" type="image/icon type">
+  <title>WeBois</title>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1><i class="fab fa-pied-piper-hat"></i> WeBois</h1>
+      <a href="index.html" class="btn"><i class="fas fa-skull"></i> Leave Dungeon</a>
+    </header>
+    <main class="chat-main">
+      <div id="video-grid" class="video-messages">
+					
+      </div>
+      <div id="style-1" class="chat-sidebar">
+        <h3><i class="fas fa-dungeon"></i> Dungeon Name:</h3>
+        <h2 id="room-name"></h2>
+        <h3><i class="fas fa-dragon"></i> Vikings</h3>
+        <ul id="users">
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script>
+  <!-- <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script> -->
+  <script src="./js/lib/peerjs.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/video.js"></script>
+</body>
+</html>
